@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: tap-gui-catalog-info
+  description: A sample catalog for Backstage
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  targets:
+    - ./components/tap-gui.yaml
+    - ./groups/default-org.yaml
+    - ./systems/tap-gui-system.yaml
+    - ./domains/tap-gui-domain.yaml
+    - https://github.com/dektlong/store-backend-api/blob/main/catalog-info.yaml
+    - https://github.com/dektlong/store-frontend-ux/blob/main/catalog-info.yaml
+    - https://github.com/dektlong/store-brownfield-function/blob/main/catalog-info.yaml
+    - https://github.com/dektlong/api-microservices-workflow/blob/main/catalog-info.yaml
+    
+    
